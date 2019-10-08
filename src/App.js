@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Contact from './components/Contact'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Contact 
+        name="Bob Razowski"
+        online = "false"
+        image="https://i.pinimg.com/236x/5a/95/12/5a9512c7c3336acfb907773bf582140c--monsters-ink-pixar-characters.jpg"
+      />
+      <Contact 
+        name="Paul Scholes"
+        online="true"
+        image="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p363.png"
+      />
+      <Contact 
+        name="Zinédine Zidane"
+        online="false"
+        image="https://www.trzcacak.rs/myfile/detail/41-411661_zidane-sticker-clipart-zidane.png"
+      />
     </div>
   );
 }
