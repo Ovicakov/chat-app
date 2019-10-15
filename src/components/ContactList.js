@@ -8,7 +8,7 @@ const contacts = [
     birthday: '03/01/1960',
     password: 'scarlet',
     image: 'https://randomuser.me/api/portraits/men/28.jpg',
-    online: true
+
   },
   {
     name: 'Boby Lapointe',
@@ -16,7 +16,7 @@ const contacts = [
     birthday: '04/03/1956',
     password: 'thepointe',
     image: 'https://randomuser.me/api/portraits/men/52.jpg',
-    online: false
+
   },
   {
     name: 'Zinédine Zidane',
@@ -24,7 +24,7 @@ const contacts = [
     birthday: '12/07/1998',
     password: 'doublé',
     image: 'https://randomuser.me/api/portraits/men/45.jpg',
-    online: true
+
   },
   {
     name: 'Emmanuel Petit',
@@ -32,7 +32,7 @@ const contacts = [
     birthday: '14/01/1978',
     password: 'bg',
     image: 'https://randomuser.me/api/portraits/men/24.jpg',
-    online: false
+
   },
   {
     name: 'Julien Stéphan',
@@ -40,7 +40,7 @@ const contacts = [
     birthday: '16/09/1985',
     password: 'défense_à_5',
     image: 'https://randomuser.me/api/portraits/men/9.jpg',
-    online: true
+
   }
 ]
 
@@ -50,7 +50,7 @@ const ContactList = () => {
         {contacts.map(contact => ( 
             <Contact
                 name={contact.name}
-                online={contact.online}
+                // online={contact.online}
                 image={contact.image}
             />
         ))}
